@@ -7,11 +7,10 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	useEffect(() => {
-		actions.getContactList()
-	}, [])
+		actions.getContactList()}, [])
 
 	return (
-	<div className="text-center mt-5 container-fluid">
-		<ContactList />
-	</div>)
+		<div className="text-center mt-5 container-fluid">
+			<ContactList />
+		</div>)
 };

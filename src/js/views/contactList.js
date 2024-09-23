@@ -18,8 +18,7 @@ export const ContactList = () => {
 	useEffect(e => {
 		if (store.deleteIndexToModal != undefined){
 			setContactAux(store.contactList[store.deleteIndexToModal]);
-		}			
-	}, [store.deleteIndexToModal])
+		}}, [store.deleteIndexToModal])
 
 	return (
 		<>
